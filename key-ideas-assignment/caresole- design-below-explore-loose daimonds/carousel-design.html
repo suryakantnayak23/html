@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dimendSCAASI</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+            color: #333;
+        }
+
+        .carousel-container2nd {
+            width: 100%;
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 40px 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .carousel-title2nd {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .carousel-title2nd h2 {
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+
+        .carousel-title2nd p {
+            color: #666;
+            font-size: 16px;
+        }
+
+        .carousel-wrapper2nd {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 30px;
+            transition: transform 0.5s ease;
+        }
+
+        .carousel-item2nd {
+            flex: 0 0 calc(100% / 7);
+            text-align: center;
+            transition: all 0.5s ease;
+            cursor: pointer;
+            position: relative;
+        }
+
+        .carousel-item2nd img {
+            width: 100%;
+            max-width: 180px;
+            height: auto;
+            margin-bottom: 10px;
+            transition: transform 0.5s ease;
+        }
+
+        .carousel-item2nd.active {
+            transform: scale(1.1);
+            z-index: 1;
+        }
+
+        .carousel-item2nd:not(.active) {
+            opacity: 0.7;
+        }
+
+        .carousel-item-title2nd {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .carousel-item-subtitle2nd {
+            font-size: 14px;
+            color: #666;
+        }
+
+        .carousel-dots2nd {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background-color: #ccc;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .dot.active {
+            background-color: #F7B79D;
+        }
+    </style>
+</head>
+<body>
+    <div class="carousel-container2nd">
+        <div class="carousel-title2nd">
+            <h2>Explore Loose Diamonds</h2>
+            <p>Every diamond in our collection is selected for its superior cut, symmetry, and shape.</p>
+        </div>
+        <div class="carousel-wrapper2nd">
+            <div class="carousel-item2nd" data-index="0">
+                <img src="./images/Group 10.png" alt="Round Diamond" />
+                <div class="carousel-item-title2nd">Round</div>
+                <div class="carousel-item-subtitle2nd">Every diamond in our collection</div>
+            </div>
+            <div class="carousel-item2nd" data-index="1">
+                <img src="./images/Group 7.png" alt="Emerald Diamond" />
+                <div class="carousel-item-title2nd">Emerald</div>
+                <div class="carousel-item-subtitle2nd">Every diamond in our collection</div>
+            </div>
+            <div class="carousel-item2nd" data-index="2">
+                <img src="./images/Group 6.png" alt="Round Diamond" />
+                <div class="carousel-item-title2nd">Round</div>
+                <div class="carousel-item-subtitle2nd">Every diamond in our collection</div>
+            </div>
+            <div class="carousel-item2nd" data-index="3">
+                <img src="./images/Group 5.png" alt="Oval Diamond" />
+                <div class="carousel-item-title2nd">Oval</div>
+                <div class="carousel-item-subtitle2nd">Every diamond in our collection</div>
+            </div>
+            <div class="carousel-item2nd" data-index="4">
+                <img src="./images/Group 8.png" alt="Heart Diamond" />
+                <div class="carousel-item-title2nd">Heart</div>
+                <div class="carousel-item-subtitle2nd">Every diamond in our collection</div>
+            </div>
+            <div class="carousel-item2nd" data-index="5">
+                <img src="./images/Group 9.png" alt="Asscher Diamond" />
+                <div class="carousel-item-title2nd">Asscher</div>
+                <div class="carousel-item-subtitle2nd">Every diamond in our collection</div>
+            </div>
+            <div class="carousel-item2nd" data-index="6">
+                <img src="./images/Group 11.png" alt="Heart Diamond" />
+                <div class="carousel-item-title2nd">Heart</div>
+                <div class="carousel-item-subtitle2nd">Every diamond in our collection</div>
+            </div>
+        </div>
+        <div class="carousel-dots2nd">
+            <div class="dot active" data-index="0"></div>
+            <div class="dot" data-index="1"></div>
+            <div class="dot" data-index="2"></div>
+            <div class="dot" data-index="3"></div>
+            <div class="dot" data-index="4"></div>
+            <div class="dot" data-index="5"></div>
+            <div class="dot" data-index="6"></div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const wrapper = document.querySelector('.carousel-wrapper2nd');
+            const items = Array.from(document.querySelectorAll('.carousel-item2nd'));
+            const dots = document.querySelectorAll('.dot');
+            const itemCount = items.length;
+            const centerIndex = Math.floor(itemCount / 2);
+            
+            function shiftLeft(arr) {
+                return [...arr.slice(1), arr[0]];
+            }
+
+            function updateCarousel(clickedIndex) {
+                const currentCenterIndex = items.findIndex(item => 
+                    parseInt(item.dataset.index) === parseInt(dots[centerIndex].dataset.index)
+                );
+                
+                let newOrder = [...items];
+                
+                // Shift left until the clicked item is in the center
+                while (parseInt(newOrder[centerIndex].dataset.index) !== clickedIndex) {
+                    newOrder = shiftLeft(newOrder);
+                }
+                
+                // Update the DOM
+                wrapper.innerHTML = '';
+                newOrder.forEach((item, index) => {
+                    const newItem = item.cloneNode(true);
+                    if (index === centerIndex) {
+                        newItem.classList.add('active');
+                    } else {
+                        newItem.classList.remove('active');
+                    }
+                    wrapper.appendChild(newItem);
+                });
+
+                // Update dots
+                dots.forEach(dot => dot.classList.remove('active'));
+                dots[clickedIndex].classList.add('active');
+
+                // Reattach event listeners
+                attachEventListeners();
+            }
+
+            function attachEventListeners() {
+                document.querySelectorAll('.carousel-item2nd').forEach(item => {
+                    item.addEventListener('click', () => {
+                        updateCarousel(parseInt(item.dataset.index));
+                    });
+                });
+
+                dots.forEach(dot => {
+                    dot.addEventListener('click', () => {
+                        updateCarousel(parseInt(dot.dataset.index));
+                    });
+                });
+            }
+
+            // Initial setup
+            updateCarousel(0);
+        });
+    </script>
+</body>
+</html>

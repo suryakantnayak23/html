@@ -1,0 +1,579 @@
+body {
+    font-family: Arial, sans-serif, Montserrat;
+}
+
+ /* header carsoul design starts */
+  .main-container {
+            width: 90vw;
+            height: 120vh;
+            position: relative;
+            margin: auto;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .carousel-container {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .carousel-image {
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: transform 1s ease-in-out;
+        }
+
+        .pos-0 {
+            transform: translate(-40vw, 20vh);
+        }
+
+        .pos-1 {
+            transform: translate(0, -30vh);
+            width: 250px;
+            height: 250px;
+        }
+
+        .pos-2 {
+            transform: translate(40vw, 20vh);
+        }
+
+        .info-container {
+            position: absolute;
+            text-align: center;
+            width: 350px;
+            color: #333;
+        }
+
+        .info-container h1 {
+            font-size: 40px;
+            font-weight: bold;
+            margin-bottom: 5px;
+            margin-top: 40%;
+        }
+
+        .info-container p.price {
+            font-size: 30px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .info-container p.description {
+            font-size: 14px;
+            color: #666;
+            opacity: 0.48;
+        }
+
+        /* Background title styling */
+        .background-title {
+            position: absolute;
+            top: 80px;
+            left: 50%;
+            
+            transform: translateX(-50%);
+            font-size: 100px;
+            color: rgba(0, 0, 0, 0.1);
+            z-index: -1;
+            white-space: nowrap;
+            opacity: 0.5;
+        }
+
+/* header carsoul design ends */
+/* header button starts */
+.jweelName{
+    width: 62%;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 5%;
+}
+.jweelName button{
+    width: 353px;
+    height: 70px;
+    border-radius: 35px;
+    background-color: #191919;
+    color: #fff;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 34.13px;
+    margin-top: 0%;
+}
+/* header button ends */
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+.social-icons div {
+    width: 40px;
+    height: 40px;
+    background-color: #ccc;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-icons i {
+    width: 30px;
+    height: 30px;
+    margin-top: 10px;
+    margin-left: 11px;
+    font-size: 20px;
+    color: white;
+}
+
+.view-details {
+    background-color: #1d1d1d;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 75px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-right: 100px;
+}
+
+.dropdown-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    color: #fff;
+}
+
+/* collection card starts */
+
+.collection-header {
+    text-align: center;
+    margin-bottom: 30px;
+    display: block;
+    margin: 0 auto;
+    width: 62%;
+}
+.collection-header h2{
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 48.76px;
+    /* text-align: left; */
+    color: #151515;
+}
+.collection-header p{
+    font-size: 25px;
+    line-height: 36.57px;
+    color: #929292;
+    font-weight: 400;
+    margin-bottom: 20%;
+}
+
+.collection {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #F7B79D; /* Orange background */
+  }
+  
+  .collection-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: -140px;
+  }
+  
+  .card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 220px;
+    text-align: center;
+  }
+  
+  .card img {
+    height: auto;
+    margin-bottom: 5%;
+  }
+  
+  .card h3 {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24.38px;
+    color: #151515;
+  }
+  
+  .card p {
+    color: #929292;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 19.5px;
+  }
+  /* collection card ends */
+
+ /* 2nd carousel design starts */
+.carousel-container2nd {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 40px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel-title2nd {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.carousel-title2nd h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.carousel-title2nd p {
+    color: #666;
+    font-size: 16px;
+}
+
+.carousel-wrapper2nd {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    transition: transform 0.5s ease;
+}
+
+.carousel-item2nd {
+    flex: 0 0 calc(100% / 7);
+    text-align: center;
+    transition: all 0.5s ease;
+    cursor: pointer;
+    position: relative;
+}
+
+.carousel-item2nd img {
+    width: 100%;
+    max-width: 180px;
+    height: auto;
+    margin-bottom: 10px;
+    transition: transform 0.5s ease;
+}
+
+.carousel-item2nd.active {
+    transform: scale(1.1);
+    z-index: 1;
+}
+
+.carousel-item2nd:not(.active) {
+    opacity: 0.7;
+}
+
+.carousel-item-title2nd {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.carousel-item-subtitle2nd {
+    font-size: 14px;
+    color: #666;
+}
+
+.carousel-dots2nd {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+.dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #ccc;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.dot.active {
+    background-color: #F7B79D;
+}
+/* 2nd carousel design ends */
+.keep {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+.left-side {
+    text-align: center;
+}
+
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icons a {
+    color: #333;
+    margin: 0 10px;
+    font-size: 24px;
+}
+
+.right-side img {
+    width: 100%;
+    height: auto;
+}
+.head{
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 48.76px;
+    text-align: left;
+    color: #151515;
+    margin-bottom: 5%;
+}
+.para{
+    font-size: 30px;
+    line-height: 36.57px;
+    color: #929292;
+    font-weight: 400;
+    margin-bottom: 8%;
+}
+.form input{
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 36.57px;
+    text-align: left;
+    border-bottom: 1px solid #929292 !important;
+    border: 0;
+    margin-bottom: 8%;
+    padding-left: 0;
+}
+.btnfrm{
+    width: 275px;
+    height: 50px;
+    border-radius: 35px;
+    background-color: #191919;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 34.13px;
+}
+
+.btn-primary:hover {
+    color: #fff !important;
+    background-color: #191919 !important;
+     border-color: #191919 !important;
+}
+
+/* footer css starts */
+
+.footer{
+    background-color: #F9F9F9;
+    padding: 5%;
+}
+.footer_head {
+    width: 60%;
+    text-align: center;
+    margin: 0 auto;
+}
+.footer_head h4{
+    color:#F7B79D;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 30.48px;
+    margin-top: 2%;
+    margin-bottom: 8%;
+}
+.footer_head p{ 
+    color: #929292;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 36.57px;
+    margin-bottom: 8%;
+}
+.footer-list-item ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    margin-top: 3%;
+    margin-bottom: 6%;
+}
+.footer-list-item ul li {
+    display: inline-block;
+    margin: 0 3%;
+}
+.footer-list-item ul li a{
+    color:#929292;
+    text-decoration: none;
+}
+.foot-img{
+    margin: 0 auto;
+}
+.foot-img img{
+    margin-right: 2%;
+}
+.foot-img img:last-child {
+    margin-right: 0;
+}
+.copyright{
+    color: #929292;
+    text-align: center;
+    margin-top: 10%;
+    margin-bottom: 0;
+}
+/* footer css ends */
+ /*--------------------- header nav bar css start ------------------- */
+ .dimend_nav_header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+    width: 100%;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+.nav-links li a{
+    color: #333;
+    text-decoration: none;
+}
+.nav-icons {
+    display: flex;
+    align-items: center;
+}
+
+.nav-icons a {
+    margin-left: 15px;
+    color: inherit;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+.mob_row_feedback{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21.94px;
+    color: #151515;
+    margin-top: 3%;
+}
+
+/* Mobile navigation hidden by default */
+.mobile-nav {
+    display: none;
+}
+
+/* Media query for larger devices */
+@media (min-width: 769px) {
+    .mobile-nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex: 1;
+        padding-left: 20%;
+    }
+
+    .nav-links {
+        display: flex;
+    }
+
+    .menu-icon {
+        display: none; /* Hide the menu icon on larger screens */
+    }
+    /*.fa-share{
+        display: none;
+    }*/
+}
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+    .dimend_nav_header {
+        justify-content: space-between;
+    }
+    /* .dimend_1stLogo {
+        height: 25px;
+        margin-left: 20%;
+    } */
+
+    .nav-icons a {
+        margin-left: 17px;
+        margin-top: 8px;
+    }
+
+    .nav-links {
+        display: none; /* Hide nav-links by default */
+    }
+
+    .menu-icon {
+        display: block; /* Display the menu icon on smaller screens */
+        font-size: 25px;
+    }
+
+    #mobile-nav.active .nav-links {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        background-color: #fff; /* Optional: adjust the background */
+        position: absolute;
+        top: 60px; /* Adjust based on your header height */
+        left: 0;
+        padding: 10px 0;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-links li {
+        margin: 10px 20px;
+    }
+    .fa-heart{
+        display: none;
+    }
+    .mob_row_feedback{
+        display: none;
+    }
+    .jweelName button {
+        width: 225px;
+    }
+    .btnfrm {
+        width: 245px;
+        margin-bottom: 20px;
+    }
+}
+
+/*--------------------- header nav bar css end ------------------- */
+
+/* @media only screen and (min-device-width: 320px) and (max-device-width: 767px) {
+    .para{
+        text-align: center;
+        font-size: 20px;
+        line-height: 26.57px;
+    }
+    .head{
+        text-align: center;
+        font-size: 30px;
+        line-height: 20.76px;
+    }
+    .form{
+        display: none;
+    }
+    } */
+     /* last carousel design css */
+    
+    /* last caresoule design css ends */

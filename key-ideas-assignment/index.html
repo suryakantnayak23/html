@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>key-ideas-assigment-task</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.1/css/all.min.css">
+    <!-- material carasoule design -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" integrity="sha512-UJfAaOlIRtdR+0P6C3KUoTDAxVTuy3lnSXLyLKlHYJlcSU8Juge/mjeaxDNMlw9LgeIotgz5FP8eUQPhX1q10A==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+    <!-- ends -->
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="myScript.js"></script>
+
+</head>
+<body>
+<!--  header work starts -->
+<header>
+    <div class="container">
+        <div class="dimend_nav_header">
+            <div class="menu-icon" onclick="toggleMenuBar()">
+                <i class="fa fa-bars"></i>
+            </div>
+            <img src="./images/Group 4.png" alt="dimendSCAASI Logo" class="dimend_1stLogo">
+            <nav id="mobile-nav" class="mobile-nav">
+                <ul class="nav-links">
+                    <li><a href="#">Diamonds</a></li>
+                    <li><a href="#"><b>Accessories</b></a></li>
+                    <li><a href="#">Fine Jewelry</a></li>
+                    <li><a href="#">Watches</a></li>
+                </ul>
+                <!--<div class="nav-icons">
+                    <a href="#"><i class="fa fa-search"></i></a>
+                    <a href="#"><i class="fa fa-heart"></i></a>
+                    <a href="#"><i class="fa fa-user"></i></a>
+                </div>-->
+            </nav>
+            <div class="nav-icons">
+                <a href="#"><i class="fa fa-search"></i></a>
+                <a href="#"><i class="fa fa-heart"></i></a>
+                <a href="#"><i class="fa fa-user"></i></a>
+            </div>
+        </div>
+        <div class="mob_row_feedback">
+            <div class="left-icon">
+                <!--&lt;!&ndash; <img src="./images/Icon material-message (1).png" style="position: absolute; top: 17%; left: 10%;">
+                 <img sr&ndash;&gt;c="./images/Icon material-message.png">-->
+                <img src="./images/chat%20icon-fa-fa.png" style="width: 35px; height: 50px">
+                <span>Inquiry</span>
+
+            </div>
+            <div class="right-icon">
+                <i class="fa fa-user" style="color: gray;margin-right: 9px"></i>
+                <span>Feedback</span>
+            </div>
+            <!-- <div class="col-md-1">/div>
+            <div class="col-md-10"></div>
+            <div class="col-md-1"><i class="fa fa-user" style="color: gray;margin-right: 9px"></i>
+                <span style="font-size: 12px">Feedback</span></div> -->
+        </div>
+    </div>
+</header>
+<!-- header work ends here -->
+
+<!--  first animation -->
+<div class="main-container">
+    <div class="carousel-container">
+        <img src="images.webp/Clip%20path%20group%20(10).webp" class="carousel-image pos-0" alt="Image 1"
+             data-title="Pave" data-price="$2500" data-description="Take 5% off for a limited time">
+        <img src="images.webp/Clip%20path%20group%20(8).webp" class="carousel-image pos-1" alt="Image 3"
+             data-title="Hidden Halo" data-price="$3500" data-description="Take 10% off for a limited time">
+        <img src="images.webp/Clip%20path%20group%20(9).webp" class="carousel-image pos-2" alt="Image 1"
+             data-title="Vintage & Antique" data-price="$4500" data-description="Take 20% off for a limited time">
+        <div class="info-container">
+            <h1 id="info-title">Hidden Halo</h1>
+            <p id="info-price" class="price">$4200</p>
+            <p id="info-description" class="description">A hidden halo for a sparkling surprise.</p>
+        </div>
+        <div id="background-title" class="background-title">Hidden Halo</div>
+    </div>
+</div>
+
+
+<!--  first animation -->
+<div class="container" style=" display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;">
+    <div class="social-icons">
+        <div><i class="fab fa-facebook-f"></i></div>
+        <div><i class="fab fa-instagram"></i></div>
+        <div><i class="fab fa-twitter"></i></div>
+    </div>
+    <button class="view-details">View Details</button>
+    <div class="dropdown-icon"><i class="fas fa-angle-down"></i></div>
+</div>
+
+<!--  collection work starts here -->
+<div class="collection-header">
+    <h2>Our Collection</h2>
+    <p>
+        Discover our elegant and unique fine jewelry collections, ranging from classic diamond studs to stylish pendants
+        and dazzling bracelets.
+    </p>
+</div>
+<section class="collection">
+    <div class="collection-cards">
+        <div class="card">
+            <img src="./images.webp/Mask Group 1.webp" alt="Wedding Rings">
+            <h3>Wedding Rings</h3>
+            <p>Every diamond in our collection</p>
+        </div>
+        <div class="card">
+            <img src="./images.webp/Clip path group (5).webp" alt="Engagement Rings">
+            <h3>Engagement Rings</h3>
+            <p>Every diamond in our collection</p>
+        </div>
+        <div class="card">
+            <img src="./images.webp/Clip path group (6).webp" alt="Fine Jewelry">
+            <h3>Fine Jewelry</h3>
+            <p>Every diamond in our collection</p>
+        </div>
+        <div class="card">
+            <img src="./images.webp/Clip path group (7).webp" alt="Latest Rings">
+            <h3>Latest Rings</h3>
+            <p>Every diamond in our collection</p>
+        </div>
+    </div>
+</section>
+<!-- our collection work ends here -->
+
+<!--  carresoule design starts  -->
+<div class="container">
+    <div class="carousel-title collection-header">
+        <h2>Explore Loose Diamonds</h2>
+        <p>Every diamond in our collection is selected for its superior cut, symmetry, and shape.</p>
+    </div>
+
+    <!--     <div class="carousel-container2nd">-->
+    <!--         <div class="carousel-title2nd">-->
+    <!--             <h2>Explore Loose Diamonds</h2>-->
+    <!--             <p>Every diamond in our collection is selected for its superior cut, symmetry, and shape.</p>-->
+    <!--         </div>-->
+    <div class="carousel-wrapper2nd">
+        <div class="carousel-item2nd" data-index="0">
+            <img src="./images/Group 10.png" alt="Round Diamond"/>
+            <div class="carousel-item-title2nd">Round</div>
+            <div class="carousel-item-subtitle2nd">Every diamond in our collection</div>
+        </div>
+        <div class="carousel-item2nd" data-index="1">
+            <img src="./images/Group 7.png" alt="Emerald Diamond"/>
+            <div class="carousel-item-title2nd">Emerald</div>
+            <div class="carousel-item-subtitle2nd">Every diamond in our collection</div>
+        </div>
+        <div class="carousel-item2nd" data-index="2">
+            <img src="./images/Group 6.png" alt="Round Diamond"/>
+            <div class="carousel-item-title2nd">Round</div>
+            <div class="carousel-item-subtitle2nd">Every diamond in our collection</div>
+        </div>
+        <div class="carousel-item2nd" data-index="3">
+            <img src="./images/Group 5.png" alt="Oval Diamond"/>
+            <div class="carousel-item-title2nd">Oval</div>
+            <div class="carousel-item-subtitle2nd">Every diamond in our collection</div>
+        </div>
+        <div class="carousel-item2nd" data-index="4">
+            <img src="./images/Group 8.png" alt="Heart Diamond"/>
+            <div class="carousel-item-title2nd">Heart</div>
+            <div class="carousel-item-subtitle2nd">Every diamond in our collection</div>
+        </div>
+        <div class="carousel-item2nd" data-index="5">
+            <img src="./images/Group 9.png" alt="Asscher Diamond"/>
+            <div class="carousel-item-title2nd">Asscher</div>
+            <div class="carousel-item-subtitle2nd">Every diamond in our collection</div>
+        </div>
+        <div class="carousel-item2nd" data-index="6">
+            <img src="./images/Group 11.png" alt="Heart Diamond"/>
+            <div class="carousel-item-title2nd">Heart</div>
+            <div class="carousel-item-subtitle2nd">Every diamond in our collection</div>
+        </div>
+    </div>
+    <div class="carousel-dots2nd">
+        <div class="dot active" data-index="0"></div>
+        <div class="dot" data-index="1"></div>
+        <div class="dot" data-index="2"></div>
+        <div class="dot" data-index="3"></div>
+        <div class="dot" data-index="4"></div>
+        <div class="dot" data-index="5"></div>
+        <div class="dot" data-index="6"></div>
+    </div>
+</div>
+
+<!-- <div class="carousel-container">
+    <div class="carousel-wrapper">
+        <div class="carousel-item" data-index="0">
+            <img src="./images/Group 10.png" alt="Round Diamond" />
+            <div class="carousel-item-title">Round</div>
+            <div class="carousel-item-subtitle">Every diamond in our collection</div>
+        </div>
+        <div class="carousel-item" data-index="1">
+            <img src="./images/Group 7.png" alt="Emerald Diamond" />
+            <div class="carousel-item-title">Emerald</div>
+            <div class="carousel-item-subtitle">Every diamond in our collection</div>
+        </div>
+        <div class="carousel-item" data-index="2">
+            <img src="./images/Group 6.png" alt="Round Diamond" />
+            <div class="carousel-item-title">Round</div>
+            <div class="carousel-item-subtitle">Every diamond in our collection</div>
+        </div>
+        <div class="carousel-item" data-index="3">
+            <img src="./images/Group 5.png" alt="Oval Diamond" />
+            <div class="carousel-item-title">Oval</div>
+            <div class="carousel-item-subtitle">Every diamond in our collection</div>
+        </div>
+        <div class="carousel-item" data-index="4">
+            <img src="./images/Group 8.png" alt="Heart Diamond" />
+            <div class="carousel-item-title">Heart</div>
+            <div class="carousel-item-subtitle">Every diamond in our collection</div>
+        </div>
+        <div class="carousel-item" data-index="5">
+            <img src="./images/Group 9.png" alt="Asscher Diamond" />
+            <div class="carousel-item-title">Asscher</div>
+            <div class="carousel-item-subtitle">Every diamond in our collection</div>
+        </div>
+        <div class="carousel-item" data-index="6">
+            <img src="./images/Group 11.png" alt="Heart Diamond" />
+            <div class="carousel-item-title">Heart</div>
+            <div class="carousel-item-subtitle">Every diamond in our collection</div>
+        </div>
+    </div>
+    <div class="carousel-dots">
+        <div class="dot active" data-index="0"></div>
+        <div class="dot" data-index="1"></div>
+        <div class="dot" data-index="2"></div>
+        <div class="dot" data-index="3"></div>
+        <div class="dot" data-index="4"></div>
+        <div class="dot" data-index="5"></div>
+        <div class="dot" data-index="6"></div>
+    </div>
+</div>
+</div>  -->
+<!--  carresoule design ends here -->
+<!-- material carresoule design starts -->
+<!-- <div class="swiper-container">
+  <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="./images/Group 10.png" /></div>
+      <div class="swiper-slide"><img src="./images/Group 7.png" /></div>
+      <div class="swiper-slide"><img src="./images/Group 6.png" /></div>
+      <div class="swiper-slide"><img src="./images/Group 5.png" /></div>
+      <div class="swiper-slide"><img src="./images/Group 8.png" /></div>
+      <div class="swiper-slide"><img src="./images/Group 9.png" /></div>
+      <div class="swiper-slide"><img src="./images/Group 11.png" /></div>
+  </div>
+  <!-- Add Pagination -->
+<div class="swiper-pagination"></div>
+<!--</div> -->
+
+<!-- material carresoule design ends -->
+
+<div class="container keep ">
+    <div class="row">
+        <div class="col-md-6  col-sm-12 col-xs-12">
+            <h2 class="head">Keep In Touch</h2>
+            <p class="para">Our lab created diamonds are the <br>eco-conscious choice, and exhibit <br>the same sparkle
+                as natural diamonds.</p>
+            <form class="form">
+                <input type="email" class="form-control" placeholder="Enter your email Id to subscribe" required>
+                <button type="submit" class="btn btn-primary btnfrm">Sign Up</button>
+            </form>
+        </div>
+        <div class="col-md-6  col-sm-12 col-xs-12">
+            <!-- <div class="row">
+                <div class="col-md-6 col-sm-12 col-xs-12">
+                    <img src="images.webp/Clip path group (1).webp" alt="Ring Image" class="img-fluid" >
+                    <img src="images.webp/Clip path group (2).webp" alt="Wedding Rings Image" class="img-fluid">
+                </div>
+                <div class="col-md-6 col-sm-12 col-xs-12">
+                    <img src="images.webp/Clip path group (3).webp" alt="Bracelet Image" class="img-fluid">
+                    <img src="images.webp/Clip path group (4).webp" alt="Coffee and Hands Image" class="img-fluid" >
+                </div>
+            </div> -->
+
+            <div class="row">
+                <div class="col-md-6 col-sm-12 col-xs-12">
+                    <img src="images.webp/Clip path group (4).webp" alt="Ring Image" class="img-fluid">
+                </div>
+                <div class="col-md-6 col-sm-12 col-xs-12">
+                    <img src="images.webp/Clip path group (1).webp" alt="Wedding Rings Image" class="img-fluid">
+                </div>
+            </div>
+            <div class="row" style="padding-top: 30px;">
+                <div class="col-md-6 col-sm-12 col-xs-12">
+                    <img src=" images.webp/Clip path group (2).webp" alt="Bracelet Image" class="img-fluid">
+                </div>
+                <div class="col-md-6 col-sm-12 col-xs-12">
+                    <img src="images.webp/Clip path group (3).webp   " alt="Coffee and Hands Image" class="img-fluid">
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</div>
+</hr>
+
+<!-- footer section -->
+<footer class="footer">
+    <div class="footer_head">
+        <img src="./images/Group 4.png" alt="dimendSCAASI Logo" class="dimend_Logo">
+        <!-- <h1>dimendSCAASI</h1> -->
+        <h4>20+ Years Of Trust</h4>
+        <p>dimend SCAASI Jeweler is a unique Jewelry store located in Chicago with an emphasis on great style and
+            exceptional quality.</p>
+    </div>
+    <hr/>
+    <div class="footer-list-item">
+        <ul>
+            <li><a href="#" class="footer_Link">Education</a></li>
+            <li><a href="#" class="footer_Link">About Us</a></li>
+            <li><a href="#" class="footer_Link">Customer Care</a></li>
+            <li><a href="#" class="footer_Link">Contact Us</a></li>
+        </ul>
+    </div>
+    <div class="foot-img">
+        <img src="./images/Image 51.png" alt="GIA Logo" class="footer_Logo">
+        <img src="./images/Image 49.png" alt="Jeweler's of America Logo" class="footer_Logo">
+        <img src="./images/Image 52.png" alt="JVC Logo" class="footer_Logo">
+        <img src="./images/Image 50.png" alt="BBB Logo" class="footer_Logo">
+        <img src="./images/Visa Logo.png" alt="VISA Logo" class="footer_Logo">
+        <img src="./images/Mastercard Logo.png" alt="Mastercard Logo" class="footer_Logo">
+        <img src="./images/Discover Logo.png" alt="DISCOVER Logo" class="footer_Logo">
+        <img src="./images/Paypal Logo 1.png" alt="PayPal Logo" class="footer_Logo">
+        <img src="./images/Image 53.png" alt="American Express Logo" class="footer_americanlogo">
+    </div>
+    <p class="copyright">dimendSCAASI™ and InnerView™ are Registered Trademarks of dimend SCAASI Ltd. © 2010-2020 dimend
+        SCAASI Ltd. Terms Of Use | Sitemap | Privacy Policy</p>
+    </div>
+</footer>
+<!-- footer section end -->
+
+<script>
+    const images = document.querySelectorAll('.carousel-image');
+    const backgroundTitle = document.getElementById('background-title');
+
+    function updateInfo() {
+        const centeredImage = document.querySelector('.pos-1');
+        const title = centeredImage.getAttribute('data-title');
+        const price = centeredImage.getAttribute('data-price');
+        let description = centeredImage.getAttribute('data-description');
+
+        // Add the correct code based on the discount percentage in the description
+        if (description.includes("5%")) {
+            description += "<br><strong>Use code: LOVE5</strong>";
+        } else if (description.includes("10%")) {
+            description += "<br><strong>Use code: LOVE10</strong>";
+        } else if (description.includes("20%")) {
+            description += "<br><strong>Use code: LOVE20</strong>";
+        }
+
+        document.getElementById('info-title').innerText = title;
+        document.getElementById('info-price').innerText = price;
+        document.getElementById('info-description').innerHTML = description;
+
+        backgroundTitle.innerText = title;
+    }
+
+    function rotateImages() {
+        images.forEach((img) => {
+            img.classList.remove('animate-pos-0', 'animate-pos-1', 'animate-pos-2');
+        });
+
+        images.forEach((img) => {
+            if (img.classList.contains('pos-0')) {
+                img.classList.replace('pos-0', 'pos-1');
+                img.classList.add('animate-pos-0');
+            } else if (img.classList.contains('pos-1')) {
+                img.classList.replace('pos-1', 'pos-2');
+                img.classList.add('animate-pos-1');
+            } else if (img.classList.contains('pos-2')) {
+                img.classList.replace('pos-2', 'pos-0');
+                img.classList.add('animate-pos-2');
+            }
+        });
+
+        setTimeout(updateInfo, 1000);
+    }
+
+    images.forEach((img) => {
+        img.addEventListener('click', rotateImages);
+    });
+
+    updateInfo();
+
+
+    document.addEventListener('DOMContentLoaded', function () {
+        const wrapper = document.querySelector('.carousel-wrapper2nd');
+        const items = Array.from(document.querySelectorAll('.carousel-item2nd'));
+        const dots = document.querySelectorAll('.dot');
+        const itemCount = items.length;
+        const centerIndex = Math.floor(itemCount / 2);
+
+        function shiftLeft(arr) {
+            return [...arr.slice(1), arr[0]];
+        }
+
+        function updateCarousel(clickedIndex) {
+            const currentCenterIndex = items.findIndex(item =>
+                parseInt(item.dataset.index) === parseInt(dots[centerIndex].dataset.index)
+            );
+
+            let newOrder = [...items];
+
+            // Shift left until the clicked item is in the center
+            while (parseInt(newOrder[centerIndex].dataset.index) !== clickedIndex) {
+                newOrder = shiftLeft(newOrder);
+            }
+
+            // Update the DOM
+            wrapper.innerHTML = '';
+            newOrder.forEach((item, index) => {
+                const newItem = item.cloneNode(true);
+                if (index === centerIndex) {
+                    newItem.classList.add('active');
+                } else {
+                    newItem.classList.remove('active');
+                }
+                wrapper.appendChild(newItem);
+            });
+
+            // Update dots
+            dots.forEach(dot => dot.classList.remove('active'));
+            dots[clickedIndex].classList.add('active');
+
+            // Reattach event listeners
+            attachEventListeners();
+        }
+
+        function attachEventListeners() {
+            document.querySelectorAll('.carousel-item2nd').forEach(item => {
+                item.addEventListener('click', () => {
+                    updateCarousel(parseInt(item.dataset.index));
+                });
+            });
+
+            dots.forEach(dot => {
+                dot.addEventListener('click', () => {
+                    updateCarousel(parseInt(dot.dataset.index));
+                });
+            });
+        }
+
+        // Initial setup
+        updateCarousel(0);
+    });
+</script>
+<!-- last carousel script -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/js/swiper.min.js'></script>
+<script>var swiper = new Swiper('.swiper-container', {
+    pagination: '.swiper-pagination',
+    effect: 'coverflow',
+    grabCursor: true,
+    centeredSlides: true,
+    spaceBetween: 0,
+    //loop: true,
+    autoplay: 2500,
+    autoplayDisableOnInteraction: false,
+    slidesPerView: 4,
+    coverflow: {
+        rotate: 30,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows: true
+    }
+});
+</script>
+<!-- script ends here -->
+</body>
+</html>
